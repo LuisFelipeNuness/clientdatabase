@@ -4,6 +4,8 @@ Aplicação para gerenciamento de um banco de clientes de uma empresa
 # Como subir o projeto:
 
 - Necessario ter o docker instalado na maquina para rodar o banco de dados
+- Necessario Jdk 8 ou superior
+- Necessario Postman para testes das api's
 - Comandos a executar no docker:
 
 * docker pull postgres

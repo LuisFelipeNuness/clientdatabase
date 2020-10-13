@@ -1,0 +1,169 @@
+{
+	"id": "48870761-9115-5842-d3a9-5395fab56e6f",
+	"name": "client-api",
+	"description": "collection para testar as api's do cadastro cliente project",
+	"order": [
+		"529f22af-6925-4577-9b64-f30cfd31bcb3",
+		"a4e3a55a-8252-f92a-44de-74bca4eebae7",
+		"20602904-c3e9-9823-eab7-5d125c7d8d3d",
+		"d7c8b560-cd1f-c46f-b49e-b08be4dd4a7c",
+		"f15d7513-680d-84e2-6d57-7999f159e7c5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1602530722376,
+	"owner": "3310218",
+	"public": false,
+	"requests": [
+		{
+			"id": "20602904-c3e9-9823-eab7-5d125c7d8d3d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/cliente/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1602534918443,
+			"name": "delete-cliente",
+			"description": "",
+			"collectionId": "48870761-9115-5842-d3a9-5395fab56e6f",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "529f22af-6925-4577-9b64-f30cfd31bcb3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/cliente",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1602533497334,
+			"name": "insere-cliente",
+			"description": "",
+			"collectionId": "48870761-9115-5842-d3a9-5395fab56e6f",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\": \"Luis\",\n\t\"cpf\": \"12345678901\",\n\t\"endereco\": \"Rua 14\",\n\t\"dataDeNascimento\": \"1999-09-12\"\n}"
+		},
+		{
+			"id": "a4e3a55a-8252-f92a-44de-74bca4eebae7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/cliente/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1602534308506,
+			"name": "atualiza-cliente",
+			"description": "",
+			"collectionId": "48870761-9115-5842-d3a9-5395fab56e6f",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\": \"Joao\",\n\t\"cpf\": \"12345678901\",\n\t\"endereco\": \"Rua 13\",\n\t\"dataDeNascimento\": \"1999-09-12\"\n}"
+		},
+		{
+			"id": "d7c8b560-cd1f-c46f-b49e-b08be4dd4a7c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/cliente/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1602544860218,
+			"name": "visualizar-cliente",
+			"description": "",
+			"collectionId": "48870761-9115-5842-d3a9-5395fab56e6f",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "f15d7513-680d-84e2-6d57-7999f159e7c5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/cliente",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1602544910770,
+			"name": "visualizar-todos-cliente",
+			"description": "",
+			"collectionId": "48870761-9115-5842-d3a9-5395fab56e6f",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}

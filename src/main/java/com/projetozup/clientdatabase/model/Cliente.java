@@ -1,6 +1,12 @@
 package com.projetozup.clientdatabase.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -11,13 +17,18 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @NotBlank(message = "O campo nome nao pode ser vazio")
     private String nome;
 
+    @NotBlank(message = "O campo cpf nao pode ser vazio")
     private String cpf;
 
-    private Date dataDeNascimento;
+    @NotNull
+    @JsonSerialize(using = LocalDateSerializer.class)
+    private LocalDate dataDeNascimento;
 
-    private String endereço;
+    @NotBlank(message = "O campo endereço nao pode ser vazio")
+    private String endereco;
 
     public Long getId() {
         return id;
@@ -39,19 +50,19 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Date getDataDeNascimento() {
+    public LocalDate getDataDeNascimento() {
         return dataDeNascimento;
     }
 
-    public void setDataDeNascimento(Date dataDeNascimento) {
+    public void setDataDeNascimento(LocalDate dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }

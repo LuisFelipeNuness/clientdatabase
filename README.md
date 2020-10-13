@@ -16,4 +16,4 @@ Aplicação para gerenciamento de um banco de clientes de uma empresa
 
 * mvn spring-boot:run
 
--Uma coleção com requisições de exemplo está disponivel na raiz do projeto
+- Uma coleção com requisições de exemplo está disponivel na raiz do projeto
